@@ -1,0 +1,28 @@
+{
+  "name": "OpenInterX Docs",
+  "theme": "mint",
+  "openapi": {
+    "path": "docs/api-reference/openapi.json"
+  },
+  "navigation": [
+    {
+      "group": "Guides",
+      "pages": [
+        "index",
+        "quickstart",
+        "development"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/Base/index",
+        "api-reference/Embeddings/index",
+        "api-reference/Transcript/index",
+        "api-reference/Video-Metadata-Transcript/index"
+      ]
+    }
+  ]
+}
+

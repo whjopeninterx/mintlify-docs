@@ -1,122 +1,170 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "DocForge API",
+  "index": "api-reference/getting-started/overview",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#988cff",
+    "light": "#988cff",
+    "dark": "#7f72db"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/fav.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
+            "icon": "lightning",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "api-reference/getting-started/overview",
+              "api-reference/getting-started/organizations-and-projects"
             ]
           },
           {
-            "group": "Customization",
+            "group": "base",
+            "icon": "at",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "api-reference/base/upload",
+              {
+                "group": "Upload by Signed URL",
+                "pages": [
+                  "api-reference/base/upload-by-signed-url/get-upload-signed-url",
+                  "api-reference/base/upload-by-signed-url/upload-file-using-signed-url"
+                ]
+              },
+              "api-reference/base/delete",
+              "api-reference/base/get-metadata",
+              "api-reference/base/download",
+              "api-reference/base/extract-frames",
+              "api-reference/base/video-clip",
+              "api-reference/base/video-split",
+              "api-reference/base/video-edit"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Transcript",
+            "icon": "file-text",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "api-reference/transcript/sync-generate-speaker",
+              "api-reference/transcript/sync-generate-audio",
+              "api-reference/transcript/async-summary",
+              "api-reference/transcript/async-generate-video",
+              "api-reference/transcript/async-generate-speaker",
+              "api-reference/transcript/speaker-recgonition",
+              "api-reference/transcript/async-generate-audio"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Video Metadata & Transcript",
+            "icon": "video",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "api-reference/video-metadata-transcript/youtube-video-metadata",
+              "api-reference/video-metadata-transcript/youtube-video-transcript",
+              "api-reference/video-metadata-transcript/youtube-video-mai-transcript",
+              "api-reference/video-metadata-transcript/instagram-video-metadata",
+              "api-reference/video-metadata-transcript/instagram-video-transcript",
+              "api-reference/video-metadata-transcript/instagram-video-mai-transcript",
+              "api-reference/video-metadata-transcript/tiktok-video-metadata",
+              "api-reference/video-metadata-transcript/tiktok-video-transcript",
+              "api-reference/video-metadata-transcript/tiktok-video-mai-transcript",
+              "api-reference/video-metadata-transcript/twitter-video-metadata",
+              "api-reference/video-metadata-transcript/twitter-video-transcript",
+              "api-reference/video-metadata-transcript/twitter-video-mai-transcript"
+            ]
+          },
+          {
+            "group": "Embeddings",
+            "icon": "vector-square",
+            "pages": [
+              "api-reference/embeddings/image-embedding",
+              "api-reference/embeddings/video-embedding",
+              "api-reference/embeddings/text-embedding"
+            ]
+          },
+          {
+            "group": "Scraper",
+            "icon": "code-branch",
+            "pages": [
+              "api-reference/scraper/tiktok-video-detail",
+              "api-reference/scraper/tiktok-video-comment",
+              "api-reference/scraper/tiktok-video-comment-reply",
+              "api-reference/scraper/youtube-video-detail",
+              "api-reference/scraper/youtube-video-comment",
+              "api-reference/scraper/youtube-video-comment-reply"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Video Understanding",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Video Understanding Models",
+            "icon": "video",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/gemini/gemini-vlm",
+              "api-reference/nova/nova-vlm",
+              "api-reference/qwen/qwen-vlm"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Image Understanding",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Image Understanding Models",
+            "icon": "image",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/gemini/gemini-ilm",
+              "api-reference/gpt/gpt-ilm",
+              "api-reference/nova/nova-ilm",
+              "api-reference/qwen/qwen-ilm"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/lightlogo.svg",
+    "dark": "/logo/darklogo.svg"
   },
   "navbar": {
     "links": [
       {
+        "label": "Admin Portal",
+        "href": "https://api-platform.memories.ai"
+      },
+      {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:contact@memories.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Memories.ai",
+      "href": "https://memories.ai/"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/memories_ai?s=21&t=aeDeOLBz_UOmFgRnHJVaVQ",
+      "linkedin": "https://www.linkedin.com/company/memoriesai/"
     }
   }
 }
