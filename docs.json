@@ -125,6 +125,10 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Memories (Data Hosting)",
+        "href": "https://memories.ai/docs/"
       }
     ]
   },
