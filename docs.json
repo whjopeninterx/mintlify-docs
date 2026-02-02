@@ -18,8 +18,7 @@
             "group": "Getting Started",
             "icon": "lightning",
             "pages": [
-              "api-reference/getting-started/overview",
-              "api-reference/getting-started/organizations-and-projects"
+              "api-reference/getting-started/overview"
             ]
           },
           {
